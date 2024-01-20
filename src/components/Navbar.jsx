@@ -15,7 +15,7 @@ function Navbar() {
     { href: '#', key: 'Home', label: 'Home' },
     { href: '#Tech', key: 'Technologies', label: 'Technologies' },
     { href: '#Projects', key: 'Projects', label: 'Projects' },
-    { href: '/', key: 'Contact', label: 'Contact' },
+    { href: '#Contact', key: 'Contact', label: 'Contact' },
   ];
 
   return (
