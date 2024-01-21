@@ -7,10 +7,6 @@ function Navbar() {
     setClicked(!clicked);
   };
 
-  const handleNavItemClick = () => {
-    setClicked(!clicked); // Close the navbar when a list item is clicked
-  };
-
   const NAV_LINKS = [
     { href: '#', key: 'Home', label: 'Home' },
     { href: '#Tech', key: 'Technologies', label: 'Technologies' },
@@ -20,10 +16,10 @@ function Navbar() {
 
   return (
     <div className="fixed z-10 w-full">
-      <nav className="py-2 w-full flex justify-around">
-        <div className="w-[80%] flex justify-between my-0 mx-auto bg-white rounded-lg shadow-lg px-8">
+      <nav className="py-2 w-full flex justify-evenly md:justify-around">
+        <div className="w-[80%] flex justify-between my-0 mx-auto bg-white rounded-lg shadow-lg px-4 md:px-8">
 
-        <div className="w-auto font-bold text-xl px-2 lg:px-3 py-[1.2rem]">
+        <div className="w-auto font-bold text-xl md:px-2 lg:px-3 py-[1.2rem]">
           <a className="hover:text-gray-600"
           href={NAV_LINKS[0].href} 
           label={NAV_LINKS[0].label}>
@@ -62,7 +58,7 @@ function Navbar() {
 
           <div className="lg:hidden">
             <div
-              className="px-2 lg:px-6 py-[1.2rem]"
+              className="md:px-2 lg:px-6 py-[1.2rem]"
               onClick={toggleNavbar}
             >
               <i className="ri-menu-line text-2xl cursor-pointer"></i>
@@ -78,7 +74,7 @@ function Navbar() {
           <ul className="flex flex-col justify-evenly w-full">
             <li
               className={`p-[0.70rem] sm:p-4 text-center transition duration-800 ease-in-out`}
-              onClick={handleNavItemClick}
+              onClick={toggleNavbar}
             >
               <a
                 className="hover:text-gray-600"
@@ -90,7 +86,7 @@ function Navbar() {
             </li>
             <li
               className="p-[0.7rem] sm:p-4 text-center"
-              onClick={handleNavItemClick}
+              onClick={toggleNavbar}
             >
               <a
                 className="hover:text-gray-600"
@@ -102,7 +98,7 @@ function Navbar() {
             </li>
             <li
               className="p-[0.7rem] sm:p-4 text-center"
-              onClick={handleNavItemClick}
+              onClick={toggleNavbar}
             >
               <a
                 className="hover:text-gray-600"

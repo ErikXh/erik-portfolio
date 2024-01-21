@@ -23,7 +23,7 @@ return(
         </div>
     </div>
     <div className="container w-full flex justify-center py-8">
-        <Button text="contact me"/>
+        <Button btnName="contact me"/>
     </div>
 </div>
 )
