@@ -18,7 +18,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='w-[50%]'>
+    <div className='w-full'>
         <div className="text-center">
                   <h2>Contact me</h2>
         </div>
