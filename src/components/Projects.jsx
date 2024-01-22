@@ -27,7 +27,7 @@ function Projects(){
         <section id="Projects" className="section">
 
             <div className="p-8 text-center">
-                <h1 className="font-3xl">
+                <h1 className="text-3xl lg:text-4xl font-semibold">
                     ... Some of the porjects I have worked on
                 </h1>
             </div>

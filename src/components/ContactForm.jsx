@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from './Button';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -21,13 +22,14 @@ const ContactForm = () => {
     <div className='w-full'>
 
         <div className="text-center">
-                  <h2>Contact me</h2>
+                  <h2 className='text-2xl'>Contact me</h2>
         </div>
 
       <form onSubmit={handleSubmit}>
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col py-4 gap-4'>
           <label htmlFor="name">Name:</label>
           <input
+          className='border-black'
             type="text"
             id="name"
             name="name"
@@ -37,7 +39,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col py-4 gap-4'>
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -49,7 +51,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col py-4 gap-4'>
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
@@ -62,7 +64,10 @@ const ContactForm = () => {
           <p>Characters left: {500 - formData.message.length}</p>
         </div>
 
-        <button type="submit">Submit</button>
+        <div className="py-4">
+          <Button btnName="submit"/>
+        </div>
+       
       </form>
     </div>
   );
