@@ -29,7 +29,6 @@ const ContactForm = () => {
         <div className='flex flex-col py-4 gap-4'>
           <label htmlFor="name">Name:</label>
           <input
-          className='border-black'
             type="text"
             id="name"
             name="name"

@@ -94,7 +94,7 @@ padding-bottom: 5rem;
 
 /* form */
 
-form input, textarea{
-  border: 1px solid black;
+input, textarea{
+  border: 1px solid rgb(175, 175, 175);
   border-radius: 5px;
 }
