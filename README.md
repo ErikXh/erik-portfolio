@@ -2,6 +2,6 @@ This is my first portfolio website which will also be live upon complition (link
 
 Technologies used:
 
-ReactJS
-Tailwind
-planned: animation libraries, functional contact form library
+ReactJS,
+Tailwind,
+and planned: animation libraries, functional contact form library
