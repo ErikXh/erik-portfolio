@@ -10,7 +10,7 @@ return(
 
     <div className="container w-[80%]">
         <div className="flex justify-center items-center text-center">
-            <h1 className="text-2xl md:text-2xl lg:text-5xl font-bold">
+            <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">
             Let us create your dream <span className="text-animation">Website </span>
             for your personal Blog, product or that wierd App Website idea you have.
             </h1> 

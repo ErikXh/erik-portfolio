@@ -3,13 +3,14 @@ import ContactForm from "./ContactForm";
 function Footer(){
 
     return(
-        <footer id="Contact" className="section glass-effect grid justify-center items-center content-center">
+        <footer id="Contact" className="section glass-effect p-5 grid justify-center items-center content-center">
             <div className="flex flex-col-reverse lg:flex-row justify-center content-center items-center gap-6">
 
-            <div className="container  bg-slate-50 z-10 rounded-lg shadow-lg p-4">
+            <div className="container max-w-[80%] bg-slate-50 z-10 rounded-lg shadow-lg p-4">
                 <ContactForm/>
             </div>
-            <div className="flex flex-col content-center p-4 md:h-[15rem] lg:h-[32rem]">
+
+            <div className="flex flex-col max-w-[80%] content-center p-4 md:h-[15rem] lg:h-[32rem] gap-5">
 
                 <h1 className="text-xl md:text-2xl"> Let's go on to build your website.</h1>
                 <h2> Contact me through the contact from on your left or though my social media below.</h2>

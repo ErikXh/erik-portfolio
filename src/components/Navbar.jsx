@@ -1,11 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
   const toggleNavbar = () => {
     setClicked(!clicked);
   };
+
+  const handleScroll = () =>{
+    if(window.scrollY > 60){
+      setScroll(!scroll)
+    }else{
+      setScroll(scroll)
+    }
+  }
+
+  useEffect(()=>{
+    window.addEventListener('scroll', handleScroll)
+
+    return ()=>{
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   const NAV_LINKS = [
     { href: '#', key: 'Home', label: 'Home' },
@@ -15,9 +32,11 @@ function Navbar() {
   ];
 
   return (
+    <header>
     <div className="fixed z-10 w-full">
-      <nav className="py-2 w-full flex justify-evenly md:justify-around">
-        <div className="w-[80%] flex justify-between my-0 mx-auto bg-white rounded-lg shadow-lg px-4 md:px-8">
+      <nav className={`py-2 w-full flex justify-evenly md:justify-around`}>
+        <div className={`w-[80%] flex justify-between my-0 rounded-lg shadow-lg px-4 md:px-8 bg-white
+        ${ setScroll ? '' : 'bg-white'}`}>
 
         <div className="w-auto font-bold text-xl md:px-2 lg:px-3 py-[1.2rem]">
           <a className="hover:text-gray-600"
@@ -112,6 +131,7 @@ function Navbar() {
         </div>
       </div>
     </div>
+    </header>
   );
 }
 

@@ -28,7 +28,7 @@ function Projects(){
 
             <div className="p-8 text-center">
                 <h1 className="text-3xl lg:text-4xl font-semibold">
-                    ... Some of the porjects I have worked on
+                    ... Some of the projects I have worked on
                 </h1>
             </div>
             
