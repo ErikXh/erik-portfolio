@@ -24,15 +24,17 @@ function Projects(){
     ]
 
     return(
-        <section id="Projects" className="section">
+    <section id="Projects" className="section">
+
+        <div className="max-w-[80%] mx-auto">
 
             <div className="p-8 text-center">
-                <h1 className="text-3xl lg:text-4xl font-semibold">
-                    ... Some of the projects I have worked on
+                <h1 className="text-3xl lg:text-5xl font-semibold">
+                    Some of the projects I have worked on
                 </h1>
             </div>
             
-            <div className="container max-w-[80%] pt-8 flex flex-col md:flex-row justify-center items-center content-center flex-wrap gap-8">
+            <div className="container pt-8 flex flex-col md:flex-row justify-center items-center content-center flex-wrap gap-8">
             
             
             <Card
@@ -51,7 +53,8 @@ function Projects(){
             link={projects[2].link}/>
 
            </div>
-        </section>
+        </div>
+    </section>
     )
 }
 

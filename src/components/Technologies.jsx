@@ -12,7 +12,7 @@ return(
         <div className="flex justify-center items-center text-center">
             <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">
             Let us create your dream <span className="text-animation">Website </span>
-            for your personal Blog, product or that wierd App Website idea you have.
+            for your personal Blog, product or that unique Web-App idea you have.
             </h1> 
         </div>
     </div>
@@ -33,7 +33,7 @@ return(
             <h1 className='text-md md:text-l lg:text-2xl font-bold text-indigo-500'>ReactJs</h1>
         </div>
         <div>
-            <img src={imageTailWind} alt="Tailwind Image" className='w-60 lg:w-[20rem] bg-contain p-4' />
+            <img src={imageTailWind} alt="Tailwind Image" className='w-60 lg:w-[30rem] bg-contain p-4' />
         </div>
     </div>
 </section>

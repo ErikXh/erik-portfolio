@@ -8,21 +8,22 @@ function Navbar() {
     setClicked(!clicked);
   };
 
-  const handleScroll = () =>{
-    if(window.scrollY > 60){
-      setScroll(!scroll)
-    }else{
-      setScroll(scroll)
-    }
-  }
+  // const handleScroll = () =>{
+  //   if(window.scrollY > 60){
+  //     setScroll(!scroll)
+  //   }else{
+  //     setScroll(scroll)
+  //   }
+  // }
 
-  useEffect(()=>{
-    window.addEventListener('scroll', handleScroll)
+  // useEffect(()=>{
+  //   window.addEventListener('scroll', handleScroll)
 
-    return ()=>{
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+  //   return ()=>{
+  //     window.removeEventListener('scroll', handleScroll)
+  //   }
+  // }, [])
+  //  ${ setScroll ? '' : 'bg-white'}`}
 
   const NAV_LINKS = [
     { href: '#', key: 'Home', label: 'Home' },
@@ -35,8 +36,7 @@ function Navbar() {
     <header>
     <div className="fixed z-10 w-full">
       <nav className={`py-2 w-full flex justify-evenly md:justify-around`}>
-        <div className={`w-[80%] flex justify-between my-0 rounded-lg shadow-lg px-4 md:px-8 bg-white
-        ${ setScroll ? '' : 'bg-white'}`}>
+        <div className={`w-[80%] flex justify-between my-0 rounded-lg shadow-lg px-4 md:px-8 bg-white`}>
 
         <div className="w-auto font-bold text-xl md:px-2 lg:px-3 py-[1.2rem]">
           <a className="hover:text-gray-600"
