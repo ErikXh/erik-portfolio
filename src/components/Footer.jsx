@@ -3,9 +3,10 @@ import ContactForm from "./ContactForm";
 function Footer(){
 
     return(
-        <footer id="Contact" className="section max-w-[80%] glass-effect p-5 mx-auto">
-            <div className="w-full flex flex-col-reverse lg:flex-row justify-center content-center items-center gap-6">
+        <footer id="Contact" className="section pt-24 glass-effect p-5 mx-auto">
 
+            <div className="max-w-[80%] mx-auto">
+            <div className="w-full flex flex-col-reverse lg:flex-row justify-center content-center items-center gap-6">
             <div className="container md:w-[80%] lg:w-[70%] bg-slate-50 z-10 rounded-lg shadow-lg p-4">
                 <ContactForm/>
             </div>
@@ -30,22 +31,29 @@ function Footer(){
             </div>
             </div>
 
-            <div className="container py-14 mx-auto w-[80%] flex gap-10">
+            <div className="container py-14 mx-auto w-[80%] flex flex-col md:flex-row justify-center flex-wrap text-center gap-10">
             <div>
                 <p className="font-md pt-3 pb-3">E-mail:</p>
-                <a href="mailto:mail@email.com" className="font-md">email@email.com</a>
+                <a href="mailto:mail@email.com" className="font-md hover:underline">email@email.com</a>
             </div>
 
             <div>
                 <p className="font-md pt-3 pb-3">Phone number:</p>
-                <a href="tel:123-456-7890" className="font-md pt-3 pb-3">123-456-7890</a>
+                <a href="tel:123-456-7890" className="font-md pt-3 pb-3 hover:underline">123-456-7890</a>
             </div>
 
             <div>
                 {/* to be updated */}
-                <p className="font-md pt-3 pb-3">WhatsApp number:</p>
-                <a href="https://wa.me/123-456-7890?text=I20%would20%like20%to20%buld20%a20%website" 
-                className="font-md pt-3 pb-3">Send a message</a>
+                <p className="font-md pt-3 pb-3"><span className="text-green-600">WhatsApp number:</span></p>
+                <a href="https://wa.me/123-456-7890?text=I20%would20%like20%to20%buld20%a20%website"
+                target="_blank" 
+                className="font-md pt-3 pb-3 hover:underline hover:text-green-600">Send a message</a>
+            </div>
+            </div>
+
+            <div className="container py-4 mx-auto w-[80%] flex flex-col items-center text-center gap-10">
+            <h1 className="text-md">This Portfolio was build using ReactJs and Tailwindcss along with many amazing libraries</h1>
+            <h1 className="text-md">I look forward to working with you!</h1>
             </div>
             </div>
 
