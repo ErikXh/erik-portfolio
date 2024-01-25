@@ -1,5 +1,9 @@
 import ContactForm from "./ContactForm";
 
+import albflag from "../assets/albanianflag.png"
+import engflag from "../assets/englishflag.png"
+import gerflag from "../assets/germanflag.png"
+
 function Footer(){
 
     return(
@@ -17,15 +21,18 @@ function Footer(){
                 <h2> Contact me through the contact from on your left or though my social media below.</h2>
                 <h2> We can comunicate in these three langues: </h2>
 
-                <div className="p-4 flex justify-even gap-4">
-                    <div className="rounded-lg bg-blue-700 w-8 h-8">
-                        <img src="" alt="German language" className="object-cover"/>
+                <div className="p-4 flex justify-even gap-8">
+                    <div className="group rounded-lg text-center w-10 h-6 cursor-pointer hover:scale-110 duration-150">
+                        <img src={gerflag} alt="German language" className="object-cover rounded-md"/>
+                        <h4 className="hidden group-hover:block text-sm">German</h4>
                     </div>
-                    <div className="rounded-lg bg-blue-700 w-8 h-8">
-                        <img src="" alt="English language" className="object-cover"/>
+                    <div className="group rounded-lg w-10 h-6 cursor-pointer hover:scale-110 duration-150">
+                        <img src={engflag} alt="English language" className="object-cover rounded-md"/>
+                        <h4 className="hidden group-hover:block text-sm">English</h4>
                     </div>
-                    <div className="rounded-lg bg-blue-700 w-8 h-8">
-                        <img src="" alt="Albanian language" className="object-cover"/>
+                    <div className="group rounded-lg w-10 h-6 cursor-pointer hover:scale-110 duration-150">
+                        <img src={albflag} alt="Albanian language" className="object-cover rounded-md"/>
+                        <h4 className="hidden group-hover:block text-sm">Albanian</h4>
                     </div>
                 </div>
             </div>
