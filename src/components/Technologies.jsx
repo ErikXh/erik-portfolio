@@ -27,7 +27,7 @@ return(
     }}
     initial="hidden"
     animate = {controlls}
-    transition={{duration: 0.5}}
+    transition={{duration: 0.65}}
     >
     <div ref={ref} className="w-full pt-8 flex flex-col gap-16">
 

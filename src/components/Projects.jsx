@@ -45,7 +45,7 @@ function Projects(){
             }}
             initial="hidden"
             animate = {controls}
-            transition={{duration: 0.5}}
+            transition={{duration: 0.65}}
         >
         <div ref={ref} className="max-w-[80%] mx-auto">
 
