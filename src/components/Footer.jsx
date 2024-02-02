@@ -18,7 +18,18 @@ function Footer(){
             <div className="flex flex-col md:w-[80%] lg:w-[65%] content-center p-4 md:h-[15rem] lg:h-[32rem] gap-5">
 
                 <h1 className="text-xl md:text-2xl"> Let's go on to build your website.</h1>
-                <h2> Contact me through the contact from on your left or though my social media below.</h2>
+                <h2> Contact me through the contact from on your left or though my social media below:</h2>
+
+                <div className="container flex flex-col lg:flex-row justify-even">
+
+                        <div className="w-8 h-8 cursor-pointer">
+                            <i className="ri-instagram-line"></i>
+                        </div>
+                        <div className="w-8 h-8 cursor-pointer">
+                            <i className="ri-mail-line"></i>
+                        </div>
+                </div>
+
                 <h2> We can comunicate in these three langues: </h2>
 
                 <div className="p-4 flex justify-even gap-8">

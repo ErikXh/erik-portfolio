@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { motion, useAnimation, useInView } from 'framer-motion';
 
 function Navbar() {
-  const [clicked, setClicked] = useState(false);
-  const [scroll, setScroll] = useState(false);
+   const [clicked, setClicked] = useState(false);
+  // const [scroll, setScroll] = useState(false);
 
   const toggleNavbar = () => {
     setClicked(!clicked);
@@ -35,6 +36,12 @@ function Navbar() {
   return (
     <header>
     <div className="fixed z-10 w-full">
+     <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.3 }}
+      >
       <nav className={`py-2 w-full flex justify-evenly md:justify-around`}>
         <div className={`w-[80%] flex justify-between my-0 rounded-lg shadow-lg px-4 md:px-8 bg-white`}>
 
@@ -85,7 +92,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-
+      </motion.div>
       <div
         className={`${clicked ? 'block' : 'hidden'} mx-auto w-[80%] md:w-[60%] lg:hidden duration-500`}
       >
