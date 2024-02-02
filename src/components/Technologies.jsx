@@ -1,12 +1,35 @@
+import { useEffect, useRef } from 'react';
 import ImageReact from '../assets/react.svg'
 import imageTailWind from '../assets/tailwind.png'
+import { motion, useAnimation, useInView } from 'framer-motion';
 
 function Technoligies(){
+
+
+    const ref = useRef(null)
+    const isInView = useInView(ref, {once: true})
+
+    const controlls = useAnimation();
+
+    useEffect(()=>{
+        if(isInView){
+            controlls.start({opacity:1, y:0})
+        }
+    })
 
 return(
 <section id="Tech" className="section">
 
-    <div className="w-full pt-8 flex flex-col gap-16">
+<motion.div
+    variants={{
+        hidden: {opacity: 0, y: 100},
+        visible: {opacity:1, y:0}
+    }}
+    initial="hidden"
+    animate = {controlls}
+    transition={{duration: 0.5}}
+    >
+    <div ref={ref} className="w-full pt-8 flex flex-col gap-16">
 
     <div className="container w-[80%]">
         <div className="flex justify-center items-center text-center">
@@ -26,7 +49,7 @@ return(
         </div>
     </div>
     </div>
-
+</motion.div>
     <div className="flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-40 w-full my-10 text-center">
         <div className='p-2'>
             <img src={ImageReact} alt="React Image" className='bg-contain w-60 p-4 rotate-anm' />

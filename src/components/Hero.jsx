@@ -1,14 +1,18 @@
 import Button from "./Button";
-
+import { motion} from 'framer-motion';
 
 function Hero(){
 
 return(
 
 <div className="hero-section grid content-center justify-center lg:h-[100vh]">
-    
+    <motion.div
+    initial={{ opacity: 0, y: -100 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: 100 }}
+    >
     <div className="w-[80%] flex content-center justify-around flex-col lg:flex-row mx-auto">
-
+ 
         <div className="container w-full flex content-center text-center">
         <div className="flex justify-center items-center">
         <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">
@@ -25,6 +29,7 @@ return(
     <div className="container w-full flex justify-center py-8">
         <Button btnName="contact me"/>
     </div>
+    </motion.div>
 </div>
 )
 }

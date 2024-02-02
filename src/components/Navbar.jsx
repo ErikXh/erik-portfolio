@@ -40,7 +40,6 @@ function Navbar() {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 50 }}
-              transition={{ duration: 0.3 }}
       >
       <nav className={`py-2 w-full flex justify-evenly md:justify-around`}>
         <div className={`w-[80%] flex justify-between my-0 rounded-lg shadow-lg px-4 md:px-8 bg-white`}>

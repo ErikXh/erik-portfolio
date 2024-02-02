@@ -18,7 +18,7 @@ function Footer(){
             <div className="flex flex-col md:w-[80%] lg:w-[65%] content-center p-4 md:h-[15rem] lg:h-[32rem] gap-5">
 
                 <h1 className="text-xl md:text-2xl"> Let's go on to build your website.</h1>
-                <h2> Contact me through the contact from on your left or though my social media below:</h2>
+                <h2> Contact me through the contact from on your left or though the platforms below:</h2>
 
                 <div className="container flex flex-col lg:flex-row justify-even">
 
