@@ -77,8 +77,8 @@ padding-bottom: 5rem;
 
 }
 
-.rotate-anm{
-  animation: rotate-anmt infinite 45s radial;
+.rotate-anmt{
+  animation: rotate-anmt infinite 45s;
 }
 
 @keyframes rotate-anmt {

@@ -52,8 +52,8 @@ return(
 </motion.div>
     <div className="flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-40 w-full my-10 text-center">
         <div className='p-2'>
-            <img src={ImageReact} alt="React Image" className='bg-contain w-60 p-4 rotate-anm' />
-            <h1 className='text-md md:text-l lg:text-2xl font-bold text-[#00D8FF]'>ReactJs</h1>
+            <img src={ImageReact} alt="React Image" className='bg-contain w-60 p-4 rotate-anmt' />
+            <h1 className='text-md md:text-l lg:text-2xl font-bold text-[#000000]'>ReactJs</h1>
         </div>
         <div>
             <img src={imageTailWind} alt="Tailwind Image" className='w-60 lg:w-[30rem] bg-contain p-4' />
