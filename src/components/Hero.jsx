@@ -27,7 +27,9 @@ return(
         </div>
     </div>
     <div className="container w-full flex justify-center py-8">
-        <Button btnName="contact me"/>
+        <Button
+        refrenceId="#contact"
+        btnName="contact me"/>
     </div>
     </motion.div>
 </div>

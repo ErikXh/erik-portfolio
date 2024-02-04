@@ -18,15 +18,19 @@ function Footer(){
             <div className="flex flex-col md:w-[80%] lg:w-[65%] content-center p-4 md:h-[15rem] lg:h-[32rem] gap-5">
 
                 <h1 className="text-xl md:text-2xl"> Let's go on to build your website.</h1>
-                <h2> Contact me through the contact from on your left or though the platforms below:</h2>
+                <h2> Contact me through the contact from</h2>
 
-                <div className="container flex flex-col lg:flex-row justify-even">
+                <h2> Social media and Github contribuions: </h2>
+                <div className="container flex justify-even">
 
                         <div className="w-8 h-8 cursor-pointer">
-                            <i className="ri-instagram-line"></i>
+                            <i className="ri-instagram-line text-lg lg:text-2xl hover:text-pink-600"></i>
                         </div>
                         <div className="w-8 h-8 cursor-pointer">
-                            <i className="ri-mail-line"></i>
+                            <i className="ri-github-fill text-lg lg:text-2xl hover:text-green-400"></i>
+                        </div>
+                        <div className="w-8 h-8 cursor-pointer">
+                            <i className="ri-youtube-fill text-lg lg:text-2xl hover:text-red-500"></i>
                         </div>
                 </div>
 
@@ -49,7 +53,7 @@ function Footer(){
             </div>
             </div>
 
-            <div className="container py-14 mx-auto w-[80%] flex flex-col md:flex-row justify-center flex-wrap text-center gap-10">
+            {/* <div className="container py-14 mx-auto w-[80%] flex flex-col md:flex-row justify-center flex-wrap text-center gap-10">
             <div>
                 <p className="font-md pt-3 pb-3">E-mail:</p>
                 <a href="mailto:mail@email.com" className="font-md hover:underline">email@email.com</a>
@@ -62,14 +66,14 @@ function Footer(){
 
             <div>
                 {/* to be updated */}
-                <p className="font-md pt-3 pb-3"><span className="text-green-600">WhatsApp number:</span></p>
+                {/* <p className="font-md pt-3 pb-3"><span className="text-green-600">WhatsApp number:</span></p>
                 <a href="https://wa.me/123-456-7890?text=I20%would20%like20%to20%buld20%a20%website"
                 target="_blank" 
                 className="font-md pt-3 pb-3 hover:underline hover:text-green-600">Send a message</a>
             </div>
-            </div>
+            </div> */}
 
-            <div className="container py-4 mx-auto w-[80%] flex flex-col items-center text-center gap-10">
+            <div className="container py-14 mx-auto w-[80%] flex flex-col items-center text-center gap-10">
             <h1 className="text-md">This Portfolio was build using ReactJs and Tailwindcss along with many amazing libraries</h1>
             <h1 className="text-md">I look forward to working with you!</h1>
             </div>

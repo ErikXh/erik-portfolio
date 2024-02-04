@@ -6,17 +6,15 @@ const About = () => {
 
     <div className='container w-[80%]'>
       <h2>About Me</h2>
-      <p>Hello, I'm Erik, a passionate front-end developer dedicated to creating visually appealing and user-friendly websites. My journey into the world of web development has been a transformative one, and I'm excited to share a bit of my story with you.</p>
+      <p>Hi, I'm Erik, a former customer service rep turned front-end developer. My journey into coding was fueled by a passion for technology and design.</p>
 
-      <h3>From Customer Service to Coding</h3>
-      <p>Previously, I worked as a customer service representative, where I honed my communication and problem-solving skills. However, my curiosity for technology and design led me to explore the realm of web development. The transition from handling customer queries to crafting interactive and responsive user interfaces was a thrilling shift that ignited my enthusiasm for coding.</p>
+      <h3>Transition to Coding</h3>
+      <p>From handling customer queries to crafting interactive user interfaces, the shift has been thrilling. It sparked my enthusiasm for coding and ignited a desire to create visually appealing websites.</p>
 
-      <h3>Why I'm Committed as a Beginner</h3>
-      <p>Despite being a beginner in the field, I am committed to delivering websites that exceed my clients' expectations. Learning is a continuous journey for me, and I embrace the challenges that come with being a novice developer. I understand the importance of listening to my clients, understanding their vision, and translating that into a functional and aesthetically pleasing website.</p>
+      <h3>Commitment as a Beginner</h3>
+      <p>Despite being a beginner, I'm dedicated to delivering websites that exceed expectations. Every project is a learning opportunity. I stay updated with the latest technologies to provide modern and efficient solutions.</p>
 
-      <p>My dedication stems from the belief that every project is an opportunity to learn and grow. I am committed to staying updated with the latest technologies and best practices in web development to ensure that I can provide modern and efficient solutions to my clients.</p>
-
-      <p>Thank you for considering me as your front-end developer. I look forward to the exciting projects ahead and the chance to bring your ideas to life through the power of code.</p>
+      <p>Thank you for considering me as your front-end developer. I look forward to bringing your ideas to life through the power of code.</p>
     </div>
     </section>
 

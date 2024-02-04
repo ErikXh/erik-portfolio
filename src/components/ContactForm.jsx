@@ -64,7 +64,9 @@ const ContactForm = () => {
         </div>
 
         <div className="py-4">
-          <Button btnName="submit"/>
+          <Button 
+          type="submit"
+          btnName="submit"/>
         </div>
        
       </form>

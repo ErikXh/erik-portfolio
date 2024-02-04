@@ -45,7 +45,7 @@ function Navbar() {
       <nav className={`py-2 w-full flex justify-evenly md:justify-around`}>
         <div className={`w-[80%] flex justify-between my-0 rounded-lg shadow-lg px-4 md:px-8 bg-white`}>
 
-        <div className="w-auto font-bold text-xl md:px-2 lg:px-3 py-[1.2rem]">
+        <div className="w-auto font-bold text-xl md:px-2 lg:px-3 py-[1.5rem]">
           <a className="hover:text-gray-600"
           href={NAV_LINKS[0].href} 
           label={NAV_LINKS[0].label}>
@@ -53,7 +53,7 @@ function Navbar() {
           </a>
         </div>
 
-        <div className="w-80 hidden lg:block pt-[0.7rem] pb-4 text-center">
+        <div className=" hidden lg:block lg:py-4 pr-[1rem] text-center">
             <ul className="flex justify-evenly">
                 <li className="md:p-[0.70rem] sm:p-4 text-center">
                     <a 
