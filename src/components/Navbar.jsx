@@ -31,6 +31,7 @@ function Navbar() {
     { href: '#Tech', key: 'Technologies', label: 'Technologies' },
     { href: '#Projects', key: 'Projects', label: 'Projects' },
     { href: '#Contact', key: 'Contact', label: 'Contact' },
+    { href: '#about', key: 'About', label: 'About' }
   ];
 
   return (
@@ -54,6 +55,14 @@ function Navbar() {
 
         <div className="w-80 hidden lg:block pt-[0.7rem] pb-4 text-center">
             <ul className="flex justify-evenly">
+                <li className="md:p-[0.70rem] sm:p-4 text-center">
+                    <a 
+                    className="hover:text-gray-600"
+                    href={NAV_LINKS[4].href} 
+                    label={NAV_LINKS[4].label}>
+                    {NAV_LINKS[4].key}
+                    </a>
+                </li>
                 <li className="md:p-[0.70rem] sm:p-4 text-center">
                     <a 
                     className="hover:text-gray-600"
@@ -97,6 +106,18 @@ function Navbar() {
       >
         <div className="flex justify-between bg-white rounded-lg shadow-lg px-8 w-full">
           <ul className="flex flex-col justify-evenly w-full">
+          <li
+              className={`p-[0.70rem] sm:p-4 text-center transition duration-800 ease-in-out`}
+              onClick={toggleNavbar}
+            >
+              <a
+                className="hover:text-gray-600"
+                href={NAV_LINKS[4].href}
+                label={NAV_LINKS[4].label}
+              >
+                {NAV_LINKS[4].key}
+              </a>
+            </li>
             <li
               className={`p-[0.70rem] sm:p-4 text-center transition duration-800 ease-in-out`}
               onClick={toggleNavbar}
