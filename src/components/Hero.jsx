@@ -1,5 +1,6 @@
 import Button from "./Button";
 import { motion} from 'framer-motion';
+import profile_img from '../assets/test_profile_image_bg.png'
 
 function Hero(){
 
@@ -23,7 +24,7 @@ return(
         </div>
 
         <div className="container flex justify-end py-40 px-4">
-            <img src="" alt="image of me" />
+            <img src={profile_img} alt="image of me" />
         </div>
     </div>
     <div className="container w-full flex justify-center py-8">
