@@ -23,7 +23,7 @@ return(
         </div>
         </div>
 
-        <div className="container flex justify-end py-40 px-4">
+        <div className="container flex justify-end py-10 px-4">
             <img src={profile_img} alt="image of me" />
         </div>
     </div>
