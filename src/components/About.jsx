@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id='about' className='section'>
 
-    <div className='container w-[80%] py-20'>
+    <div className='container w-[80%] py-20 hidden'>
 
     <div className="py-4">
         <h2 className='text-2xl'>About Me</h2>
@@ -27,6 +27,36 @@ const About = () => {
       <p>Thank you for considering me as your front-end developer. 
         I look forward to bringing your ideas to life through the power of code.</p>
     </div>
+
+<div className='container w-[80%] py-20'>
+
+<div className="py-4">
+<div className="flex flex-row justify-center">
+
+<h2 className='text-3xl lg:text-5xl font-semibold mb-3'>About Me</h2>
+
+</div>
+      <p>
+      Hi! I'm Erik, a Salesforce Marketing Cloud Developer with a passion for creating impactful, 
+      user-centered solutions. My journey into the tech world began in customer service, 
+      where I developed a deep understanding of user needs, problem-solving, 
+      and the importance of communication. This background helps me build not just functional 
+      but intuitive and user-friendly systems that genuinely improve customer experiences.
+      </p>
+</div>
+
+<div className="py-4">
+    <h3 className='text-lg mb-1'>Transition to Coding</h3>
+      <p>After learning how to code, I transitioned into Salesforce development, 
+        where I now specialize in building robust marketing automation solutions. 
+        My diverse experience enables me to blend technical expertise with empathy for end-users, 
+        resulting in solutions that not only perform well but also meet the real-world needs of 
+        customers and stakeholders.
+      </p>
+</div>
+</div>
+
+    
     </section>
 
   );

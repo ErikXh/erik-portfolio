@@ -65,7 +65,9 @@ const ContactForm = () => {
           type="submit"
           btnName="submit"/>
         </div>
-       
+       <p className='sm:text-[0.55rem] lg:text-[0.85rem] italic'>*By submitting this form, you agree to the collection and use of your name and email for 
+        communication purposes regarding your inquiry. 
+        Your data will be securely stored and not shared with third parties.</p>
       </form>
     </div>
   );
